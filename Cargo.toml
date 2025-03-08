@@ -1,0 +1,11 @@
+[package]
+name = "hellorust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[profile.dev]
+debug = 0
+incremental = true
+lto = false
