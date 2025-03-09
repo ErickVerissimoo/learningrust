@@ -4,10 +4,15 @@ fn main(){
     println!("entre com seu nome");
     io::stdin().read_line(&mut input)
     .expect("falha ao ler a entrada");
-    panic!("panico");
+    
 
 
     println!("olá {}", input);
+
+    for i in 1..=10{
+        println!("{}", i);
+    }
+
 }
 
 fn comequie(){
@@ -15,7 +20,9 @@ fn comequie(){
         println!("olá {}",nome);
     };
     func("erick");
+ fn testar(){
     
+ }   
 }
 
 struct pessoa <'a> {

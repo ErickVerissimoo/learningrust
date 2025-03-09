@@ -1,5 +1,5 @@
 use std::fmt::Debug;
-
+use std::mem::drop;
 pub fn main(){
    let func = |nome: &str|{
     println!("Olá {}", nome)
@@ -17,7 +17,9 @@ let  pessoa: person = person{
 };
 
 ugue(pessoa);
-
+let name = "erick".to_string();
+drop(&name);
+let var = name;
 }
 #[derive(Debug)]
 struct person<'a> {
