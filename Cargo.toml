@@ -8,4 +8,3 @@ edition = "2024"
 [profile.dev]
 debug = 0
 incremental = true
-lto = false
